@@ -14,6 +14,17 @@
         android:theme="@style/Theme.NoteApp"
         tools:targetApi="31">
         <activity
+            android:name=".CreateNodeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            />
+        <activity
+            android:name=".HomePage"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
