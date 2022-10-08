@@ -3,17 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable-v24/background_note_color_5.xml" value="0.1" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2555" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_add_button.xml" value="0.2555" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_done_button.xml" value="0.264" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_mix.xml" value="0.2545" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_note.xml" value="0.2555" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_note_color_1.xml" value="0.1" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_note_color_2.xml" value="0.1" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_note_color_3.xml" value="0.1" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_note_color_4.xml" value="0.1" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_note_color_5.xml" value="0.1" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_search.xml" value="0.2545" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_subtitle_indicator.xml" value="0.2555" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/ic_done.xml" value="0.2555" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_create_node.xml" value="0.25" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_home_page.xml" value="0.25" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/item_container_note.xml" value="0.25" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/layout_mix.xml" value="0.25" />
       </map>
     </option>
   </component>
