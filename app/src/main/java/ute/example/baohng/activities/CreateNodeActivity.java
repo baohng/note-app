@@ -1,10 +1,12 @@
-package ute.example.baohng;
+package ute.example.baohng.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import ute.example.baohng.R;
 
 public class CreateNodeActivity extends AppCompatActivity {
 

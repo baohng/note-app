@@ -4,7 +4,13 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2555" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_add_button.xml" value="0.2555" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_done_button.xml" value="0.264" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_search.xml" value="0.2545" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_subtitle_indicator.xml" value="0.2555" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_create_node.xml" value="0.25" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_home_page.xml" value="0.25" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>

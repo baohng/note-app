@@ -1,4 +1,4 @@
-package ute.example.baohng;
+package ute.example.baohng.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import ute.example.baohng.R;
 
 public class HomePage extends AppCompatActivity {
 
@@ -18,7 +20,7 @@ public class HomePage extends AppCompatActivity {
         imageAddNoteMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomePage.this,CreateNodeActivity.class));
+                startActivity(new Intent(HomePage.this, CreateNodeActivity.class));
             }
         });
     }
