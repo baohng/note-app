@@ -2,6 +2,7 @@ package ute.example.baohng.activities;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
@@ -14,12 +15,15 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -49,6 +53,8 @@ public class CreateNodeActivity extends AppCompatActivity {
 
     private static final int REQUEST_CODE_STORAGE_PERMISSION = 1;
     private static final int REQUEST_CODE_SELECT_IMAGE = 2;
+
+    private AlertDialog dialogDeleteNote;
 
     private Note alreadyAvailableNote;
 
@@ -272,6 +278,65 @@ public class CreateNodeActivity extends AppCompatActivity {
                 }
             }
         });
+
+        if (alreadyAvailableNote != null) {
+            layoutMiscellaneous.findViewById(R.id.layoutDeleteNote).setVisibility(View.VISIBLE);
+            layoutMiscellaneous.findViewById(R.id.layoutDeleteNote).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    bottomSheetBehavior.setState(BottomSheetBehavior.STATE_COLLAPSED);
+                    showDeleteNoteDialog();
+                }
+            });
+        }
+    }
+
+    private void showDeleteNoteDialog() {
+        if (dialogDeleteNote == null) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(CreateNodeActivity.this);
+            View view = LayoutInflater.from(this).inflate(
+                    R.layout.layout_delete_note,
+                    (ViewGroup) findViewById(R.id.layoutDeleteNoteContainer)
+            );
+            builder.setView(view);
+            dialogDeleteNote = builder.create();
+            if (dialogDeleteNote.getWindow() != null) {
+                dialogDeleteNote.getWindow().setBackgroundDrawable(new ColorDrawable(0));
+            }
+            view.findViewById(R.id.textDeleteNote).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    class DeleteNoteTask extends AsyncTask<Void, Void, Void>{
+                        @Override
+                        protected Void doInBackground(Void... voids) {
+                            NoteDatabase.getDatabase(getApplicationContext()).noteDao()
+                                    .deleteNote(alreadyAvailableNote);
+                            return null;
+                        }
+
+                        @Override
+                        protected void onPostExecute(Void unused) {
+                            super.onPostExecute(unused);
+                            Intent intent = new Intent();
+                            intent.putExtra("isNoteDeleted", true);
+                            setResult(RESULT_OK, intent);
+                            finish();
+                        }
+                    }
+
+                    new DeleteNoteTask().execute();
+                }
+            });
+
+            view.findViewById(R.id.textCancel).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    dialogDeleteNote.dismiss();
+                }
+            });
+        }
+
+        dialogDeleteNote.show();
     }
 
     private void setSubtitleIndicatorColor(){
