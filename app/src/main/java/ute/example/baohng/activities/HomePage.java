@@ -8,7 +8,10 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import java.util.ArrayList;
@@ -59,6 +62,26 @@ public class HomePage extends AppCompatActivity implements NotesListener {
         notesRecyclerView.setAdapter(notesAdapter);
 
         getNotes(REQUEST_CODE_SHOW_NOTES, false);
+
+        EditText inputSearch = findViewById(R.id.inputSearch);
+        inputSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                notesAdapter.cancelTimer();
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                if (noteList.size() != 0) {
+                    notesAdapter.searchNotes(editable.toString());
+                }
+            }
+        });
     }
 
     @Override
