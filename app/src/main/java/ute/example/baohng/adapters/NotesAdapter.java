@@ -18,13 +18,18 @@ import java.util.List;
 
 import ute.example.baohng.R;
 import ute.example.baohng.entities.Note;
+import ute.example.baohng.listeners.NotesListener;
 
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHolder> {
 
     private List<Note> notes;
+    private NotesListener notesListener;
 
-    public NotesAdapter(List<Note> notes) {
+
+
+    public NotesAdapter(List<Note> notes, NotesListener notesListener) {
         this.notes = notes;
+        this.notesListener = notesListener;
     }
 
     @NonNull
@@ -42,6 +47,12 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
     @Override
     public void onBindViewHolder(@NonNull NoteViewHolder holder, int position) {
         holder.setNote(notes.get(position));
+        holder.layoutNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                notesListener.onNoteClicked(notes.get(position), position);
+            }
+        });
     }
 
     @Override
