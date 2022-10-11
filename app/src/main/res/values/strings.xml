@@ -19,4 +19,10 @@
     <string name="login">LOGIN</string>
     <string name="for_got_your_password">For got your password?</string>
     <string name="create_account">Create Account</string>
+    <string name="create_account_1">Create Account</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="eugen_ho">Eugen Ho</string>
+    <string name="username">Username</string>
+    <string name="phone">Phone</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
