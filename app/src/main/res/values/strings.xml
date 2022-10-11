@@ -11,4 +11,12 @@
     <string name="delete_note">Delete Note</string>
     <string name="are_you_sure_you_want_to_delete_this_note">Are you sure you want to delete this note?</string>
     <string name="cancel">CANCEL</string>
+    <string name="note_app">Note App</string>
+    <string name="make_your_note_more_easier">Make your note more easier!</string>
+    <string name="welcome">Welcome</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="for_got_your_password">For got your password?</string>
+    <string name="create_account">Create Account</string>
 </resources>
