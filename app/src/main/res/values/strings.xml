@@ -25,4 +25,13 @@
     <string name="username">Username</string>
     <string name="phone">Phone</string>
     <string name="confirm_password">Confirm Password</string>
+    <string name="ho_nguyen_gia_bao">Ho Nguyen Gia Bao</string>
+    <string name="baohng">BaoHng</string>
+    <string name="software_engineer">Software Engineer</string>
+    <string name="tags">Tags</string>
+    <string name="my_profile">My Profile</string>
+    <string name="h_nguy_n_gia_b_o">Hồ Nguyễn Gia Bảo</string>
+    <string name="msv_2050531200107">MSV:2050531200107</string>
+    <string name="home">Home</string>
+    <string name="log_out">Log Out</string>
 </resources>

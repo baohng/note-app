@@ -31,4 +31,23 @@
     <color name="colorLayerDark">#D6000000</color>
     <color name="colorLayerSemiDark">#60000000</color>
     <color name="colorTextPrimary">#212121</color>
+
+    <color name="colorPrimary2">#673AB7</color>
+    <color name="colorPrimaryDark2">#512DA8</color>
+    <color name="colorAccent2">#FF5252</color>
+    <color name="colorGreen">#32CD32</color>
+
+    <color name="colorPrimary3">#20A9FF</color>
+    <color name="colorPrimaryDark3">#0760FF</color>
+    <color name="colorAccent3">#FF2020</color>
+    <color name="colorBackground3">#FBFBFB</color>
+    <color name="colorTextSecondary">#757575</color>
+    
+    <color name="profile_background">#2C2E43</color>
+    <color name="text_or_icon">#FFFFFF</color>
+    <color name="secondary_text">#9CA185</color>
+    <color name="dashboard_item_1">#01CD98</color>
+    <color name="dashboard_item_2">#5351FC</color>
+    <color name="dashboard_item_3">#E64000</color>
+    <color name="dashboard_item_4">#F6B900</color>
 </resources>

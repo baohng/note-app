@@ -51,6 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:includeFontPadding="false"
+            android:paddingStart="@dimen/_12sdp"
             android:text="@string/make_your_note_more_easier"
             android:textColor="@color/white"
             android:textSize="20sp"/>
@@ -69,6 +70,7 @@
         android:layout_height="0dp"
         android:background="@drawable/login_background"
         android:paddingStart="30dp"
+        android:paddingEnd="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/viewSupporter">
 

@@ -18,15 +18,17 @@
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_search.xml" value="0.2545" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/background_subtitle_indicator.xml" value="0.2555" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/header.xml" value="0.1815" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/header_background_profile.xml" value="0.1" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/ic_done.xml" value="0.2555" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/login_background.xml" value="0.1" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/primary_button_background.xml" value="0.1" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/drawable/second_button_background.xml" value="0.1" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_create_node.xml" value="0.25" />
-        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_home_page.xml" value="0.1" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_home_page.xml" value="0.25" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_login.xml" value="0.24947916666666667" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_profile.xml" value="0.176" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/activity_sign_up.xml" value="0.24947916666666667" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/item_container_note.xml" value="0.25" />
         <entry key="..\:/Code/MobileDevelopment/NoteApp/app/src/main/res/layout/layout_delete_note.xml" value="0.25" />
