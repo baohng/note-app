@@ -98,6 +98,15 @@ public class CreateNodeActivity extends AppCompatActivity {
             setViewOrUpdateNote();
         }
 
+        if (getIntent().getBooleanExtra("isFromQuickActions",false)) {
+            String type = getIntent().getStringExtra("quickActionType");
+            if (type.equals("image")) {
+                selectedImagePath = getIntent().getStringExtra("imagePath");
+                imageNote.setImageBitmap(BitmapFactory.decodeFile(selectedImagePath));
+                imageNote.setVisibility(View.VISIBLE);
+            }
+        }
+
         initMiscellaneous();
         setSubtitleIndicatorColor();
     }
